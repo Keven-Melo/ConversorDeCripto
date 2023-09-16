@@ -1,0 +1,41 @@
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conversor de Criptomoedas</title>
+</head>
+<body>
+    <header>
+        <h1>Conversor de Criptomoedas</h1>
+    </header>
+    <main>
+        <div class="input-container">
+            <label for="currency-select">Selecione a Criptomoeda:</label>
+            <select class="currency-select">
+                <option value="bitcoin">Bitcoin (BTC)</option>
+                <option value="ethereum">Ethereum (ETH)</option>
+                <option value="cardano">Cardano (ADA)</option>
+                <option value="dogecoin">Dogecoin (DOGE)</option>
+                <option value="monero">Monero (XMR)</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <label for="input-currency">Valor:</label>
+            <input type="number" class="input-currency" placeholder="Digite o valor">
+        </div>
+        <button class="convert-button">Converter</button>
+    </main>
+    <section class="result-container">
+        <div class="currency-info">
+            <h2 id="currency-name">Nome da Criptomoeda</h2>
+            <img class="currency-img" src="" alt="Imagem da Criptomoeda">
+        </div>
+        <p><strong>Valor em Real (BRL):</strong> <span class="currency-value">R$ 0.00</span></p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
